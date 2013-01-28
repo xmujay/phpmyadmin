@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: phpMyAdmin 4.0.0-dev\n"
 "Report-Msgid-Bugs-To: phpmyadmin-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-10-16 14:37+0200\n"
-"PO-Revision-Date: 2012-12-13 13:03+0200\n"
+"PO-Revision-Date: 2013-01-10 13:39+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://l10n.cihar.com/projects/phpmyadmin/3-5/pt_BR/>\n"
@@ -11477,7 +11477,7 @@ msgstr "Nome do arquivo"
 
 #: tbl_indexes.php:66
 msgid "The name of the primary key must be \"PRIMARY\"!"
-msgstr "O nome da chave primária deve ser... \"PRIMARY\"!"
+msgstr "O nome da chave primária deve ser \"PRIMARY\"!"
 
 #: tbl_indexes.php:75
 msgid "Can't rename index to PRIMARY!"
@@ -12118,9 +12118,8 @@ msgid ""
 "It is suggested to set {long_query_time} to a lower value, depending on your "
 "environment. Usually a value of 1-5 seconds is suggested."
 msgstr ""
-"﻿﻿﻿﻿Sugere-se para definir {long_query_time} para um valor inferior, "
-"dependendo do seu ambiente. Normalmente, um valor de 1-5 segundos é "
-"sugerido."
+"﻿﻿﻿﻿Sugere-se definir {long_query_time} para um valor inferior, dependendo "
+"do seu ambiente. Normalmente, um valor de 1-5 segundos é sugerido."
 
 #: po/advisory_rules.php:28
 #, php-format
@@ -12140,24 +12139,29 @@ msgid ""
 "Enable slow query logging by setting {log_slow_queries} to 'ON'. This will "
 "help troubleshooting badly performing queries."
 msgstr ""
+"Ative o registro de consultas lentas ajustando {log_slow_queries} para "
+"'LIGADO'. Isso ajudará a resolver problemas relacionados ao mau desempenho "
+"das consultas."
 
 #: po/advisory_rules.php:33
 msgid "log_slow_queries is set to 'OFF'"
-msgstr "log_slow_queries está definido como 'OFF'"
+msgstr "log_slow_queries está definido como 'DESLIGADO'"
 
 #: po/advisory_rules.php:35
 msgid "Release Series"
-msgstr "Série liberada"
+msgstr "Série de Lançamento"
 
 #: po/advisory_rules.php:36
 msgid "The MySQL server version less than 5.1."
-msgstr ""
+msgstr "A versão do servidor MySql é inferior a 5.1"
 
 #: po/advisory_rules.php:37
 msgid ""
 "You should upgrade, as MySQL 5.1 has improved performance, and MySQL 5.5 "
 "even more so."
 msgstr ""
+"Você deveria atualizar, uma vez que o MySQL 5.1 tem um desempenho melhor e o "
+"MySQL 5.5 melhor ainda."
 
 #: po/advisory_rules.php:38 po/advisory_rules.php:43 po/advisory_rules.php:48
 #, php-format
@@ -12171,16 +12175,20 @@ msgstr "Versão Menor"
 #: po/advisory_rules.php:41
 msgid "Version less than 5.1.30 (the first GA release of 5.1)."
 msgstr ""
+"Versão inferior a 5.1.30 (a primeira versão de disponibilidade geral do 5.1)"
 
 #: po/advisory_rules.php:42
 msgid ""
 "You should upgrade, as recent versions of MySQL 5.1 have improved "
 "performance and MySQL 5.5 even more so."
 msgstr ""
+"Você deve atualizar, uma vez que versões recentes do MySQL 5.1 têm "
+"desempenho aprimorado e as do MySQL 5.5 são ainda melhores."
 
 #: po/advisory_rules.php:46
 msgid "Version less than 5.5.8 (the first GA release of 5.5)."
 msgstr ""
+"Versão inferior a 5.5.8 (a primeira versão de disponibilidade geral do 5.5)."
 
 #: po/advisory_rules.php:47
 msgid "You should upgrade, to a stable version of MySQL 5.5"
@@ -12193,6 +12201,7 @@ msgstr "Distribuição"
 #: po/advisory_rules.php:51
 msgid "Version is compiled from source, not a MySQL official binary."
 msgstr ""
+"Varsão é compilada a partir das fontes, e não é um binário oficial do MySQL."
 
 #: po/advisory_rules.php:52
 msgid ""
@@ -12200,31 +12209,35 @@ msgid ""
 "distribution. The MySQL manual only is accurate for official MySQL binaries, "
 "not any package distributions (such as RedHat, Debian/Ubuntu etc)."
 msgstr ""
+"Se você não compilou a partir do código fonte, você pode estar usando um "
+"pacote modificado por uma distribuição. O manual do MySQL só é preciso com "
+"relação aos binários oficiais do MySQL, não com relação aos pacotes "
+"fornecidos com distribuições (como RedHat, Debian/Ubuntu etc.)."
 
 #: po/advisory_rules.php:53
 msgid "'source' found in version_comment"
-msgstr ""
+msgstr "'source' encontrado em version_coment"
 
 #: po/advisory_rules.php:56 po/advisory_rules.php:61
 msgid "The MySQL manual only is accurate for official MySQL binaries."
-msgstr ""
+msgstr "O manual do MySQL só é preciso para binários oficiais MySQL."
 
 #: po/advisory_rules.php:57
 msgid "Percona documentation is at http://www.percona.com/docs/wiki/"
-msgstr ""
+msgstr "A documentação da Percona está em http://www.percona.com/docs/wiki/"
 
 #: po/advisory_rules.php:58
 msgid "'percona' found in version_comment"
-msgstr ""
+msgstr "'percona' encontrado em version_coment"
 
 #: po/advisory_rules.php:62
 msgid "Drizzle documentation is at http://docs.drizzle.org/"
-msgstr ""
+msgstr "A documentação do Drizzle está em http://docs.drizzle.org/"
 
 #: po/advisory_rules.php:63
 #, php-format
 msgid "Version string (%s) matches Drizzle versioning scheme"
-msgstr ""
+msgstr "A string de versão (%s) corresponde ao esquema de versões do Drizzle."
 
 #: po/advisory_rules.php:65
 msgid "MySQL Architecture"
@@ -12232,7 +12245,7 @@ msgstr "Arquitetura MySQL"
 
 #: po/advisory_rules.php:66
 msgid "MySQL is not compiled as a 64-bit package."
-msgstr ""
+msgstr "MySQL não foi compilado como um pacote de 64 bits."
 
 #: po/advisory_rules.php:67
 msgid ""
@@ -12240,11 +12253,15 @@ msgid ""
 "so MySQL might not be able to access all of your memory. You might want to "
 "consider installing the 64-bit version of MySQL."
 msgstr ""
+"A quantidade de memória disponível é superior a 3GB (presumindo que o "
+"Servidor esteja na máquina local), assim o MySQL pode não ser capaz de "
+"acessar toda a memória. Você deve considerar a instalação de umva versão de "
+"64 bits do MySQL."
 
 #: po/advisory_rules.php:68
 #, php-format
 msgid "Available memory on this host: %s"
-msgstr ""
+msgstr "Memória disponível nesta máquina: %s"
 
 #: po/advisory_rules.php:70
 msgid "Query cache disabled"
@@ -12261,10 +12278,18 @@ msgid ""
 "and setting {query_cache_type} to 'ON'. <b>Note:</b> If you are using "
 "memcached, ignore this recommendation."
 msgstr ""
+"O cache de consultas é conhecido por melhorar significativamente o "
+"desempenho quando corretamente configurado. Ative-o ajustando "
+"{query_cache_size} para um valor em MB com 2 dígitos e ajustando "
+"{query_cache_type} para 'Ligado'.\n"
+"<b>Observação:</b>Se estiver usando cache em memória (memcache), ignore esta "
+"recomendação."
 
 #: po/advisory_rules.php:73
 msgid "query_cache_size is set to 0 or query_cache_type is set to 'OFF'"
 msgstr ""
+"query_cache_size está definido em 0 ou query_cache_type está definido em "
+"'DESLIGADO'."
 
 #: po/advisory_rules.php:75
 msgid "Query caching method"
@@ -12281,6 +12306,11 @@ msgid ""
 "refman/5.5/en/ha-memcached.html\">memcached</a> instead of the MySQL Query "
 "cache, especially if you have multiple slaves."
 msgstr ""
+"Você está usando o cache do MySQL Query com um banco de dados de tráfego "
+"bastante elevado. Pode valer a pena considerando a possibilidade de usar <a "
+"href=\"http://dev.mysql.com/doc/refman/5.5/en/ha-memcached.html\"> memcached "
+"</a> em vez do cache de consultas do MySQL, especialmente se você tem vários "
+"slaves."
 
 #: po/advisory_rules.php:78
 #, php-format
@@ -12288,6 +12318,8 @@ msgid ""
 "The query cache is enabled and the server receives %d queries per second. "
 "This rule fires if there is more than 100 queries per second."
 msgstr ""
+"O cache de consulta é ativado eo servidor recebe consultas %d por segundo. "
+"Esta regra é acionado se há mais de 100 consultas por segundo."
 
 #: po/advisory_rules.php:80
 #, php-format

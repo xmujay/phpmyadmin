@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: phpMyAdmin 3.5.4-dev\n"
 "Report-Msgid-Bugs-To: phpmyadmin-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-10-16 14:37+0200\n"
-"PO-Revision-Date: 2012-12-03 18:45+0200\n"
+"PO-Revision-Date: 2013-01-20 17:30+0200\n"
 "Last-Translator: Madhura Jayaratne <madhura.cj@gmail.com>\n"
 "Language-Team: Sinhala <http://l10n.cihar.com/projects/phpmyadmin/3-5/si/>\n"
 "Language: si\n"
@@ -2401,9 +2401,8 @@ msgid "Packed"
 msgstr "අහුරන ලද"
 
 #: libraries/Index.class.php:445 tbl_tracking.php:324
-#, fuzzy
 msgid "Cardinality"
-msgstr "Cardinality"
+msgstr "අනේකත්වය"
 
 #: libraries/Index.class.php:448 libraries/rte/rte_events.lib.php:497
 #: libraries/rte/rte_routines.lib.php:974 tbl_tracking.php:263
@@ -5912,9 +5911,8 @@ msgid ""
 msgstr "තම වගු වල දත්ත සහ සුචි කෑෂ්ගත කිරීමට InnoDB භාවිතා කරන මතක බෆරයේ ප්‍රමාණය."
 
 #: libraries/engines/innodb.lib.php:130
-#, fuzzy
 msgid "Buffer Pool"
-msgstr "Buffer Pool"
+msgstr "අන්තරාච එකතුව"
 
 #: libraries/engines/innodb.lib.php:131 server_status.php:652
 msgid "InnoDB Status"
@@ -5965,14 +5963,12 @@ msgid "Write requests"
 msgstr "ලිවීම සඳහා වූ ඉල්ලීම්"
 
 #: libraries/engines/innodb.lib.php:230
-#, fuzzy
 msgid "Read misses"
-msgstr "Read misses"
+msgstr "කියවීම් අතෑරුම්"
 
 #: libraries/engines/innodb.lib.php:236
-#, fuzzy
 msgid "Write waits"
-msgstr "Write waits"
+msgstr "ලිවීම් ප්‍රමාද"
 
 #: libraries/engines/innodb.lib.php:242
 msgid "Read misses in %"
@@ -6513,7 +6509,7 @@ msgstr ""
 
 #: libraries/export/sql.php:342 libraries/export/xml.php:45
 msgid "Procedures"
-msgstr "ක්‍රියාපටිපාටිය"
+msgstr "ක්‍රියාපටිපාටි"
 
 #: libraries/export/sql.php:359 libraries/export/xml.php:40
 msgid "Functions"
@@ -8275,6 +8271,8 @@ msgid ""
 "option is incompatible with phpMyAdmin and might cause some data to be "
 "corrupted!"
 msgstr ""
+"ඔබගේ PHP වින්‍යාසයන් හි mbstring.func_overload සක්‍රීය කර ඇත. මෙම විකල්පය "
+"phpMyAdmin සමඟ නොගැළපෙන අතර යම් දත්ත විනාශ වීමට හේතු විය හැකිය!"
 
 #: main.php:284
 msgid ""
@@ -8282,6 +8280,9 @@ msgid ""
 "multibyte charset. Without the mbstring extension phpMyAdmin is unable to "
 "split strings correctly and it may result in unexpected results."
 msgstr ""
+"mbstring PHP දිගුව සොයාගැනීමට නොමැති අතර ඔබ බහු-බයිට අක්ෂර කට්ටලයක් භාවිතා "
+"කරයි. mbstring දිගුව නොමැති ව phpMyAdmin හට නිවැරදිව පෙළ බෙදීමට නොහැකි අතර "
+"මෙය බලාපොරොත්තු නොවන ප්‍රතිඵල ගෙන දිය හැක."
 
 #: main.php:292
 msgid ""
@@ -8290,16 +8291,23 @@ msgid ""
 "cookie validity configured in phpMyAdmin, because of this, your login will "
 "expire sooner than configured in phpMyAdmin."
 msgstr ""
+"ඔබගේ [a@http://php.net/manual/en/session.configuration.php#ini.session.gc-"
+"maxlifetime@_blank]session.gc_maxlifetime[/a] PHP පරාමිතිය phpMyAdmin හි "
+"සිටුවා ඇති කුකී වලංගු කාලය ට වඩා අඩු අගයක් ගනී. මේ හේතුවෙන් ඔබගේ සැසිය "
+"phpMyAdmin හි සිටුවා ඇති කාලයට පෙර කල් ඉකුත් විය හැක."
 
 #: main.php:299
 msgid ""
 "Login cookie store is lower than cookie validity configured in phpMyAdmin, "
 "because of this, your login will expire sooner than configured in phpMyAdmin."
 msgstr ""
+"ලොගින් කුකියේ වලංගු කාලය phpMyAdmin හි සිටුවා ඇති කුකී වලංගු කාලය ට වඩා අඩු "
+"අගයක් ගනී. මේ හේතුවෙන් ඔබගේ සැසිය phpMyAdmin හි සිටුවා ඇති කාලයට පෙර කල් "
+"ඉකුත් විය හැක."
 
 #: main.php:307
 msgid "The configuration file now needs a secret passphrase (blowfish_secret)."
-msgstr ""
+msgstr "වින්‍යාස ගොනුවට දැන් රහස්‍ය වාක්‍ය ඛණ්ඩයක් (blowfish_secret) අවශ්‍යය."
 
 #: main.php:315
 msgid ""
@@ -8307,6 +8315,9 @@ msgid ""
 "exists in your phpMyAdmin directory. You should remove it once phpMyAdmin "
 "has been configured."
 msgstr ""
+"පිහිටුවීමේ විධානාවලිය විසින් භාවිතා කරන [code]config[/code] ඩිරෙක්ටරිය තවමත් "
+"ඔබගේ phpMyAdmin ඩිරෙක්ටරිය තුල ඇත. phpMyAdmin වින්‍යාස සකසා අවසන් වූ පසු ඔබ "
+"එය ඉවත් කල යුතුය."
 
 #: main.php:321
 #, php-format
@@ -8341,6 +8352,8 @@ msgid ""
 "Server running with Suhosin. Please refer to %sdocumentation%s for possible "
 "issues."
 msgstr ""
+"සේවාදායකය Suhosin සමග ක්‍රියාත්මකයි. මෙමගින් ඇති විය හැකි ගැටළු සම්බන්ධයෙන් "
+"%sලියකියවිලි%s බලන්න."
 
 #: navigation.php:182 server_databases.php:284 server_synchronize.php:1294
 msgid "No databases"
@@ -9356,7 +9369,7 @@ msgstr "තේරීම"
 
 #: server_status.php:605
 msgid "Transaction coordinator"
-msgstr ""
+msgstr "ගනුදෙනු සම්බන්ධීකාරක"
 
 #: server_status.php:617
 #, fuzzy
@@ -11783,7 +11796,7 @@ msgstr "විමසුම් කෑෂ් ඛණ්ඩනීකරණය"
 
 #: po/advisory_rules.php:91
 msgid "The query cache is considerably fragmented."
-msgstr ""
+msgstr "විමසුම් කෑෂය භාගීකරණයට ලක්වී ඇත."
 
 #: po/advisory_rules.php:92
 msgid ""
@@ -11810,12 +11823,12 @@ msgid "Query cache low memory prunes"
 msgstr ""
 
 #: po/advisory_rules.php:96
-#, fuzzy
 #| msgid "The amount of free memory for query cache."
 msgid ""
 "Cached queries are removed due to low query cache memory from the query "
 "cache."
-msgstr "The amount of free memory for query cache."
+msgstr ""
+"අඩු විමසුම් කෑෂ් ධාරිතාව හේතුවෙන් කෑෂ්ගත කරන ලද විමසුම් කෑෂයෙන් ඉවත් කෙරෙයි."
 
 #: po/advisory_rules.php:97
 msgid ""
@@ -11878,16 +11891,14 @@ msgid "query_cache_limit is set to 1 MiB"
 msgstr ""
 
 #: po/advisory_rules.php:110
-#, fuzzy
 #| msgid "Allows creating temporary tables."
 msgid "Percentage of sorts that cause temporary tables"
-msgstr "Allows creating temporary tables."
+msgstr "තාවකාලික වගු සැදීමට සිදුවූ අනුපිළිවෙල සැකසීම් ප්‍රතිශතයක් ලෙස"
 
 #: po/advisory_rules.php:111 po/advisory_rules.php:116
-#, fuzzy
 #| msgid "Allows creating temporary tables."
 msgid "Too many sorts are causing temporary tables."
-msgstr "Allows creating temporary tables."
+msgstr "තාවකාලික වගු සැදීමට සිදුවූ අනුපිළිවෙල සැකසීම් ඉතා විශාල ගණනකි."
 
 #: po/advisory_rules.php:112 po/advisory_rules.php:117
 msgid ""
@@ -11903,10 +11914,9 @@ msgid ""
 msgstr ""
 
 #: po/advisory_rules.php:115
-#, fuzzy
 #| msgid "Allows creating temporary tables."
 msgid "Rate of sorts that cause temporary tables"
-msgstr "Allows creating temporary tables."
+msgstr "තාවකාලික වගු සැදීමට සිදුවූ අනුපිළිවෙල සැකසීම් ගණන"
 
 #: po/advisory_rules.php:118
 #, php-format

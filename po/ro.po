@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: phpMyAdmin 3.5.4-dev\n"
 "Report-Msgid-Bugs-To: phpmyadmin-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-10-16 14:37+0200\n"
-"PO-Revision-Date: 2012-12-13 13:04+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2013-01-18 00:58+0200\n"
+"Last-Translator: Nicu Plai <nicu.plai@gmail.com>\n"
 "Language-Team: Romanian <http://l10n.cihar.com/projects/phpmyadmin/3-5/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: browse_foreigners.php:35 browse_foreigners.php:53 js/messages.php:353
 #: libraries/display_tbl.lib.php:359 server_privileges.php:1679
 msgid "Show all"
-msgstr "Arată toate"
+msgstr "Arată-le pe toate"
 
 #: browse_foreigners.php:70 libraries/PDF.class.php:42
 #: libraries/common.lib.php:2444
@@ -35,9 +35,9 @@ msgid ""
 "parent window, or your browser's security settings are configured to block "
 "cross-window updates."
 msgstr ""
-"Fereastra de navigare nu a putut fi reîncărcată. Poate aceasta nu a fost "
-"închisă, sau fereastra-părinte blochează ferestrele din cauza securității "
-"sistemului."
+"Fereastra de navigare nu a putut fi actualizată. Poate aţi închis "
+"fereastra-părinte sau setările de securitate ale sistemului sunt configurate "
+"să blocheze actualizările dintre ferestre."
 
 #: browse_foreigners.php:160 libraries/common.lib.php:3125
 #: libraries/common.lib.php:3132 libraries/common.lib.php:3341
@@ -105,14 +105,13 @@ msgid "No blob streaming server configured!"
 msgstr "Nici un server de streaming aglomerat nu a fost configurat!"
 
 #: bs_disp_as_mime_type.php:35
-#, fuzzy
 #| msgid "Failed to write file to disk."
 msgid "Failed to fetch headers"
-msgstr "Eșec la scrierea fișierului pe disc."
+msgstr "Eroare la obținerea antetului"
 
 #: bs_disp_as_mime_type.php:41
 msgid "Failed to open remote URL"
-msgstr ""
+msgstr "Eroare la accesarea URL-ului"
 
 #: changelog.php:32 license.php:28
 #, php-format
@@ -264,7 +263,7 @@ msgstr "Deselectează tot"
 
 #: db_operations.php:41 tbl_create.php:22
 msgid "The database name is empty!"
-msgstr "Cîmpul de denumire al bazei de date este gol!"
+msgstr "Numele bazei de date nu este completat!"
 
 #: db_operations.php:280
 #, php-format
@@ -417,10 +416,10 @@ msgid "You have to choose at least one column to display"
 msgstr "Trebuie să alegeți cel puțin o coloană pentru a putea afișa"
 
 #: db_qbe.php:186
-#, fuzzy, php-format
+#, php-format
 #| msgid "Switch to copied table"
 msgid "Switch to %svisual builder%s"
-msgstr "Schimbă la tabela copiată"
+msgstr "Comutați la %smodul vizual%s"
 
 #: db_qbe.php:222 libraries/db_structure.lib.php:90
 #: libraries/display_tbl.lib.php:1003
@@ -475,10 +474,9 @@ msgid "Modify"
 msgstr "Modificare"
 
 #: db_qbe.php:606
-#, fuzzy
 #| msgid "Add/Delete Criteria Row"
 msgid "Add/Delete criteria rows"
-msgstr "Adaugă/șterge criteriu"
+msgstr "Adaugă/Șterge criteriul răndurilor"
 
 #: db_qbe.php:618
 msgid "Add/Delete columns"
@@ -530,11 +528,11 @@ msgid "Search results for \"<i>%s</i>\" %s:"
 msgstr "Caută rezultate pentru \"<i>%s</i>\" %s:"
 
 #: db_search.php:227
-#, fuzzy, php-format
+#, php-format
 #| msgid "%s match(es) inside table <i>%s</i>"
 msgid "%s match inside table <i>%s</i>"
 msgid_plural "%s matches inside table <i>%s</i>"
-msgstr[0] "%s rezultat(e) în interiorul tabelului <i>%s</i>"
+msgstr[0] "%s rezultat în interiorul tabelului <i>%s</i>"
 msgstr[1] "%s rezultat(e) în interiorul tabelului <i>%s</i>"
 msgstr[2] "%s rezultat(e) în interiorul tabelului <i>%s</i>"
 
@@ -562,11 +560,11 @@ msgid "Delete"
 msgstr "Șterge"
 
 #: db_search.php:252
-#, fuzzy, php-format
+#, php-format
 #| msgid "<b>Total:</b> <i>%s</i> match(es)"
 msgid "<b>Total:</b> <i>%s</i> match"
 msgid_plural "<b>Total:</b> <i>%s</i> matches"
-msgstr[0] "<b>Total:</b> <i>%s</i> rezultat(e)"
+msgstr[0] "<b>Total:</b> <i>%s</i> rezultat"
 msgstr[1] "<b>Total:</b> <i>%s</i> rezultat(e)"
 msgstr[2] "<b>Total:</b> <i>%s</i> rezultat(e)"
 
@@ -587,10 +585,9 @@ msgid "Words are separated by a space character (\" \")."
 msgstr "Cuvinte despărțite de un spațiu (\" \")."
 
 #: db_search.php:300
-#, fuzzy
 #| msgid "Inside table(s):"
 msgid "Inside tables:"
-msgstr "În interiorul tabelei(lor):"
+msgstr "În interiorul tabelelor:"
 
 #: db_search.php:330
 msgid "Inside column:"
@@ -740,9 +737,8 @@ msgid "Data Dictionary"
 msgstr "Dicționar de date"
 
 #: db_tracking.php:80
-#, fuzzy
 msgid "Tracked tables"
-msgstr "Tabelele urmărite"
+msgstr "Tabele monitoriyate"
 
 #: db_tracking.php:85 libraries/config/messages.inc.php:504
 #: libraries/export/htmlword.php:78 libraries/export/latex.php:156
@@ -755,7 +751,7 @@ msgstr "Tabelele urmărite"
 #: server_synchronize.php:1277 server_synchronize.php:1281
 #: tbl_tracking.php:648
 msgid "Database"
-msgstr "Baza de date"
+msgstr "Bază de date"
 
 #: db_tracking.php:87
 msgid "Last version"
@@ -810,7 +806,6 @@ msgid "Structure snapshot"
 msgstr "Instantaneu al structurii"
 
 #: db_tracking.php:183
-#, fuzzy
 msgid "Untracked tables"
 msgstr "Tabele fără monitorizare"
 
@@ -4032,10 +4027,9 @@ msgid "Settings that didn't fit enywhere else"
 msgstr "Setări care nu s-au potrivit altundeva"
 
 #: libraries/config/messages.inc.php:194
-#, fuzzy
 #| msgid "Page number:"
 msgid "Page titles"
-msgstr "Titluri pagini"
+msgstr "Titluri de pagini"
 
 #: libraries/config/messages.inc.php:195
 msgid ""
@@ -5302,7 +5296,9 @@ msgstr "Numele \"verbose\" al acestui server"
 
 #: libraries/config/messages.inc.php:455
 msgid "Whether a user should be displayed a &quot;show all (rows)&quot; button"
-msgstr "Dacă unui utilizator să i se afișeze un buton \"show all\""
+msgstr ""
+"Dacă unui utilizator să i se afișeze un buton &quot;arata-le pe "
+"toate(randurile&quot;"
 
 #: libraries/config/messages.inc.php:456
 msgid "Allow to display all the rows"
@@ -7815,10 +7811,9 @@ msgstr "Sfârșitul"
 
 #: libraries/rte/rte_events.lib.php:482 libraries/rte/rte_routines.lib.php:940
 #: libraries/rte/rte_triggers.lib.php:373
-#, fuzzy
 #| msgid "Description"
 msgid "Definition"
-msgstr "Descriere"
+msgstr "Definiție"
 
 #: libraries/rte/rte_events.lib.php:488
 #, fuzzy
@@ -7829,13 +7824,15 @@ msgstr "Inserări complete"
 #: libraries/rte/rte_events.lib.php:492 libraries/rte/rte_routines.lib.php:950
 #: libraries/rte/rte_triggers.lib.php:379
 msgid "Definer"
-msgstr ""
+msgstr "Definitor"
 
 #: libraries/rte/rte_events.lib.php:535
 #: libraries/rte/rte_routines.lib.php:1014
 #: libraries/rte/rte_triggers.lib.php:417
 msgid "The definer must be in the \"username@hostname\" format"
 msgstr ""
+"Datele introduse aici trebuie sa fie în format-ul \"nume-de-utilizator"
+"@numele-gazdei\" (username@hostname)"
 
 #: libraries/rte/rte_events.lib.php:542
 msgid "You must provide an event name"
@@ -7871,13 +7868,12 @@ msgstr "PORNIT"
 
 #: libraries/rte/rte_footer.lib.php:108
 msgid "Event scheduler status"
-msgstr ""
+msgstr "Statutul programatorului de evenimente"
 
 #: libraries/rte/rte_list.lib.php:54
-#, fuzzy
 #| msgid "Return type"
 msgid "Returns"
-msgstr "Tipul întors"
+msgstr "Întoarce"
 
 #: libraries/rte/rte_list.lib.php:63 libraries/rte/rte_triggers.lib.php:359
 msgid "Event"
@@ -7889,6 +7885,10 @@ msgid ""
 "handling multi queries. <b>The execution of some stored routines may fail!</"
 "b> Please use the improved 'mysqli' extension to avoid any problems."
 msgstr ""
+"Extensia 'mysql' a PHP pe care o folosiți este învechită, și nu poate "
+"executa interogări multiple. <b>Execuția unor rutine stocate ar putea "
+"eșua!</b> Vă rugăm folosiți extensia 'mysql' îmbunătățită, pentru a evita "
+"orice fel de probleme."
 
 #: libraries/rte/rte_routines.lib.php:245
 #: libraries/rte/rte_routines.lib.php:1022
@@ -7899,13 +7899,13 @@ msgstr "Index de server nevalid: „%s”"
 
 #: libraries/rte/rte_routines.lib.php:275
 msgid "Sorry, we failed to restore the dropped routine."
-msgstr ""
+msgstr "Ne pare rău, am eșuat încercând să recuperăm rutina ștearsă."
 
 #: libraries/rte/rte_routines.lib.php:284
-#, fuzzy, php-format
+#, php-format
 #| msgid "Table %s has been dropped"
 msgid "Routine %1$s has been modified."
-msgstr "Tabelul %s a fost aruncat"
+msgstr "Tabelul %1$s a fost modificat."
 
 #: libraries/rte/rte_routines.lib.php:301
 #, fuzzy, php-format
@@ -7927,7 +7927,7 @@ msgstr "Rutine"
 
 #: libraries/rte/rte_routines.lib.php:871
 msgid "Parameters"
-msgstr ""
+msgstr "Parametrii"
 
 #: libraries/rte/rte_routines.lib.php:876
 #, fuzzy
@@ -11759,15 +11759,15 @@ msgstr "Vizualizarea schemei tabelului"
 
 #: tbl_gis_visualization.php:112
 msgid "Display GIS Visualization"
-msgstr ""
+msgstr "Afișează Vizualizarea GIS"
 
 #: tbl_gis_visualization.php:128
 msgid "Width"
-msgstr ""
+msgstr "Lățime"
 
 #: tbl_gis_visualization.php:132
 msgid "Height"
-msgstr ""
+msgstr "Înălțime"
 
 #: tbl_gis_visualization.php:136
 #, fuzzy
@@ -11787,7 +11787,7 @@ msgstr "Număr de fișiere-jurnal"
 
 #: tbl_gis_visualization.php:175
 msgid "Redraw"
-msgstr ""
+msgstr "Redesenează"
 
 #: tbl_gis_visualization.php:177
 #, fuzzy
@@ -11803,7 +11803,7 @@ msgstr "Denumire tabel"
 
 #: tbl_indexes.php:66
 msgid "The name of the primary key must be \"PRIMARY\"!"
-msgstr "Numele cheii primare trebuie să fie... PRIMARY!"
+msgstr "Numele cheii primare trebuie să fie \"PRIMARY\"!"
 
 #: tbl_indexes.php:75
 msgid "Can't rename index to PRIMARY!"
@@ -12554,41 +12554,50 @@ msgid ""
 "distribution. The MySQL manual only is accurate for official MySQL binaries, "
 "not any package distributions (such as RedHat, Debian/Ubuntu etc)."
 msgstr ""
+"Dacă nu aţi compilat din sursă, este posibil să utilizaţi un pachet "
+"modificat de o distribuţie. Manualul MySQL este precis numai pentru limbile "
+"oficiale MySQL, nu pentru orice distribuţii ale pachetului (cum ar fi "
+"RedHat, Debian/Ubuntu etc)."
 
 #: po/advisory_rules.php:53
 msgid "'source' found in version_comment"
-msgstr ""
+msgstr "'source' gasită în version_comment"
 
 #: po/advisory_rules.php:56 po/advisory_rules.php:61
 msgid "The MySQL manual only is accurate for official MySQL binaries."
 msgstr ""
+"Manualul MySQL este precis numai pentru binarele (sursele) oficiale MySQL."
 
 #: po/advisory_rules.php:57
 msgid "Percona documentation is at http://www.percona.com/docs/wiki/"
 msgstr ""
+"Documentaţia pentru Percona se găseşte la adresa "
+"http://www.percona.com/docs/wiki/"
 
 #: po/advisory_rules.php:58
 msgid "'percona' found in version_comment"
-msgstr ""
+msgstr "'percona' gasită în version_comment"
 
 #: po/advisory_rules.php:62
 msgid "Drizzle documentation is at http://docs.drizzle.org/"
 msgstr ""
+"Documentaţia pentru Drizzle se găseşte la adresa http://docs.drizzle.org/"
 
 #: po/advisory_rules.php:63
 #, php-format
 msgid "Version string (%s) matches Drizzle versioning scheme"
 msgstr ""
+"Versiunea şirului de caractere (%s) se potriveşte modalităţii de versionare "
+"specifică Drizzle"
 
 #: po/advisory_rules.php:65
-#, fuzzy
 #| msgid "MySQL charset"
 msgid "MySQL Architecture"
-msgstr "Setul de caractere MySQL"
+msgstr "Arhitectura MySQL"
 
 #: po/advisory_rules.php:66
 msgid "MySQL is not compiled as a 64-bit package."
-msgstr ""
+msgstr "MySQL nu este compilat ca un pachet pe 64 de biți."
 
 #: po/advisory_rules.php:67
 msgid ""
@@ -12596,23 +12605,25 @@ msgid ""
 "so MySQL might not be able to access all of your memory. You might want to "
 "consider installing the 64-bit version of MySQL."
 msgstr ""
+"Capacitatea de memorie depăşeşte 3 GiB (presupunând că serverul de bază de "
+"date este pe server-ul, PC-ul, propriu), aşa că este posibil ca MySQL sa nu "
+"poată accesa toată memoria RAM a sistemului. Aţi putea lua în considerare "
+"instalarea versiunii de MySQL pe 64 de biţi."
 
 #: po/advisory_rules.php:68
 #, php-format
 msgid "Available memory on this host: %s"
-msgstr ""
+msgstr "Memoria disponibilă pe acest server este: %s"
 
 #: po/advisory_rules.php:70
-#, fuzzy
 #| msgid "Query cache"
 msgid "Query cache disabled"
-msgstr "Cache interogări"
+msgstr "Pastrarea in memoria cache a interogărilor este dezactivată"
 
 #: po/advisory_rules.php:71
-#, fuzzy
 #| msgid "The server is not responding"
 msgid "The query cache is not enabled."
-msgstr "Serverul nu răspunde"
+msgstr "Pastrarea in memoria cache a interogărilor nu este activată."
 
 #: po/advisory_rules.php:72
 msgid ""
@@ -12621,20 +12632,26 @@ msgid ""
 "and setting {query_cache_type} to 'ON'. <b>Note:</b> If you are using "
 "memcached, ignore this recommendation."
 msgstr ""
+"Păstrarea în memoria cache a interogărilor se ştie că îmbunătățește "
+"performanța dacă este configurată corect. Această opțiune poate fi activată "
+"prin setarea parametrului {query_cache_size} cu o valoare de 2 MiB și prin "
+"setarea parametrului {query_cache_type} cu valoarea 'ON'. <b>Notă:</b> Dacă "
+"utilizați memcached, ignorați această recomandare."
 
 #: po/advisory_rules.php:73
 msgid "query_cache_size is set to 0 or query_cache_type is set to 'OFF'"
 msgstr ""
+"parametrul query_cache_size este setat cu valoarea 0 sau parametrul "
+"query_cache_type este setat cu valoarea 'OFF'"
 
 #: po/advisory_rules.php:75
-#, fuzzy
 #| msgid "Query cache"
 msgid "Query caching method"
-msgstr "Cache interogări"
+msgstr "Metoda de păstrare în memoria cache a interogarilor"
 
 #: po/advisory_rules.php:76
 msgid "Suboptimal caching method."
-msgstr ""
+msgstr "Metoda de folosire a memoriei cache sub nivelul optim."
 
 #: po/advisory_rules.php:77
 msgid ""
@@ -12643,6 +12660,12 @@ msgid ""
 "refman/5.5/en/ha-memcached.html\">memcached</a> instead of the MySQL Query "
 "cache, especially if you have multiple slaves."
 msgstr ""
+"Folosiți metoda de păstrare în memoria cache a interogărilor MySQL prin "
+"creșterea traficului destul de mult pe baza de date. Ar putea merita sa "
+"aveți în vedere utilizarea opțiunii <a "
+"href=\"http://dev.mysql.com/doc/refman/5.5/en/ha-"
+"memcached.html\">memcached</a> în locul păstrare în memoria cache a "
+"interogărilor MySQL, mai ales dacă aveți mai multe instanțe."
 
 #: po/advisory_rules.php:78
 #, php-format
@@ -12650,41 +12673,53 @@ msgid ""
 "The query cache is enabled and the server receives %d queries per second. "
 "This rule fires if there is more than 100 queries per second."
 msgstr ""
+"Opțiunea de păstrare în memoria cache a interogărilor MySQL este activata și "
+"serverul primește %d interogări pe secundă. Această regulă se activează "
+"dacă există mai mult de 100 de interogări pe secundă."
 
 #: po/advisory_rules.php:80
-#, fuzzy, php-format
+#, php-format
 #| msgid "Query cache"
 msgid "Query cache efficiency (%%)"
-msgstr "Cache interogări"
+msgstr ""
+"Eficiența metodei de păstrare în memoria cache a interogărilor MySQL (%%)"
 
 #: po/advisory_rules.php:81
 msgid "Query cache not running efficiently, it has a low hit rate."
 msgstr ""
+"Metoda de păstrare în memoria cache a interogărilor nu funcționează "
+"eficient, are o rată scăzută de acțiune."
 
 #: po/advisory_rules.php:82
 msgid "Consider increasing {query_cache_limit}."
 msgstr ""
+"Aveți în considerare creșterea valorii parametrului {query_cache_limit}."
 
 #: po/advisory_rules.php:83
 #, php-format
 msgid "The current query cache hit rate of %s%% is below 20%%"
 msgstr ""
+"Rata curenta de acțiune a metodei de păstrare în memoria cache a "
+"interogărilor %s%% este sub 20%%"
 
 #: po/advisory_rules.php:85
-#, fuzzy
 msgid "Query Cache usage"
-msgstr "Cache interogări"
+msgstr "Utilizarea metodei de păstrare în memoria cache a interogărilor"
 
 #: po/advisory_rules.php:86
 #, php-format
 msgid "Less than 80%% of the query cache is being utilized."
 msgstr ""
+"Mai puțin de 80%% din memoria cache alocata interogărilor este utilizată."
 
 #: po/advisory_rules.php:87
 msgid ""
 "This might be caused by {query_cache_limit} being too low. Flushing the "
 "query cache might help as well."
 msgstr ""
+"Aceasta poate fi cauzată de o valoare scăzuta a parametrului "
+"{query_cache_limit}. Golirea (ștergerea) memoria cache a interogărilor v-ar "
+"putea ajuta, de asemenea."
 
 #: po/advisory_rules.php:88
 #, php-format
@@ -12692,16 +12727,19 @@ msgid ""
 "The current ratio of free query cache memory to total query cache size is %s"
 "%%. It should be above 80%%"
 msgstr ""
+"Raportul curent dintre memoria cache liberă a interogărilor și memoria cache "
+"totală a interogărilor este %s%%. Ar trebui să fie peste 80%%"
 
 #: po/advisory_rules.php:90
-#, fuzzy
 #| msgid "Query cache"
 msgid "Query cache fragmentation"
-msgstr "Cache interogări"
+msgstr "Fragmentarea memoriei cache a interogărilor"
 
 #: po/advisory_rules.php:91
 msgid "The query cache is considerably fragmented."
 msgstr ""
+"Memoria cache a interogărilor este fragmentată într-o proporție "
+"considerabilă."
 
 #: po/advisory_rules.php:92
 msgid ""
@@ -12714,6 +12752,17 @@ msgid ""
 "using this formula: (query_cache_size - qcache_free_memory) / "
 "qcache_queries_in_cache"
 msgstr ""
+"Fragmentarea severă este probabil (mai degrabă) să necesite creşterea "
+"valorii parametrului Qcache_lowmem_prunes. Acest lucru ar putea fi cauzat de "
+"prea multe stergeri ale memoriei cache a interogărilor din cauza unei "
+"valori prea mici a parametrului {query_cache_size}. Pentru o soluţionare "
+"imediată, dar de scurtă durata puteti goli (şterge) memoria cache a "
+"interogărilor (această acţiune ar putea bloca memoria cache a interogărilor "
+"pentru o perioadă lungă de timp). Ajustarea atentă a valorii parametrului "
+"{query_cache_min_res_unit}, la o valoare inferioară v-ar putea ajuta de "
+"asemenea, de ex. puteţi seta valoarea la dimensiunea medie a interogările "
+"din memoria cache utilizând formula: (query_cache_size - qcache_free_memory) "
+"/ qcache_queries_in_cache"
 
 #: po/advisory_rules.php:93
 #, php-format
@@ -12722,18 +12771,23 @@ msgid ""
 "that the query cache is an alternating pattern of free and used blocks. This "
 "value should be below 20%%."
 msgstr ""
+"Memoria cache este în prezent fragmentată în procent de %s%%, o fragmentare "
+"în procent de 100%% înseamnă că memoria cache a interogărilor este o alocare "
+"alternativă de blocuri libere și utilizate. Această valoare ar trebui să "
+"fie sub 20%%."
 
 #: po/advisory_rules.php:95
 msgid "Query cache low memory prunes"
-msgstr ""
+msgstr "Stergeri datorate insuficienţei memoriei cache a interogărilor"
 
 #: po/advisory_rules.php:96
-#, fuzzy
 #| msgid "The amount of free memory for query cache."
 msgid ""
 "Cached queries are removed due to low query cache memory from the query "
 "cache."
-msgstr "The amount of free memory for query cache."
+msgstr ""
+"Interogările din memoria cache sunt eliminate datorita unui spațiu "
+"disponibil scăzut în memoria cache alocată interogărilor."
 
 #: po/advisory_rules.php:97
 msgid ""
@@ -12741,6 +12795,10 @@ msgid ""
 "overhead of maintaining the cache is likely to increase with its size, so do "
 "this in small increments and monitor the results."
 msgstr ""
+"Aţi putea dori să creșteți valoarea parametrului {query_cache_size}, cu "
+"toate acestea țineți minte că efortul de întreținere a memoriei cache este "
+"probabil să crească proporțional cu dimensiunea sa, asa că faceți acest "
+"lucru în incremente mici și monitorizați rezultatele."
 
 #: po/advisory_rules.php:98
 #, php-format
@@ -12748,40 +12806,49 @@ msgid ""
 "The ratio of removed queries to inserted queries is %s%%. The lower this "
 "value is, the better (This rules firing limit: 0.1%%)"
 msgstr ""
+"Raportul dintre interogările eliminate și cele inserate este %s%%. Cu cât "
+"această valoare este mai mica cu atât este mai bine (Limita de activare a "
+"regulilor este: 0,1%%)"
 
 #: po/advisory_rules.php:100
-#, fuzzy
 #| msgid "Query cache"
 msgid "Query cache max size"
-msgstr "Cache interogări"
+msgstr "Mărimea maximă a memoriei cache alocată interogărilor"
 
 #: po/advisory_rules.php:101
 msgid ""
 "The query cache size is above 128 MiB. Big query caches may cause "
 "significant overhead that is required to maintain the cache."
 msgstr ""
+"Dimensiunea memoriei cache a interogărilor depăşeşte 128 MiB. Dimensiunile "
+"mari ale memoriei cache a interogărilor poate provoca încărcări "
+"semnificative deoarece este necesar un efort suplimentar pentru a întreține "
+"memoria cache."
 
 #: po/advisory_rules.php:102
 msgid ""
 "Depending on your environment, it might be performance increasing to reduce "
 "this value."
 msgstr ""
+"În funcţie de mediu, ar putea fi vizibilă o creștere a performanței "
+"reducerea acestei valori."
 
 #: po/advisory_rules.php:103
 #, php-format
 msgid "Current query cache size: %s"
-msgstr ""
+msgstr "Dimensiune curentă a memoriei cache a interogărilor: %s"
 
 #: po/advisory_rules.php:105
-#, fuzzy
 #| msgid "Query results"
 msgid "Query cache min result size"
-msgstr "Operațiuni asupra rezultatelor interogării"
+msgstr "Dimensiunea minimă a rezultatelor în memoria cache a interogărilor"
 
 #: po/advisory_rules.php:106
 msgid ""
 "The max size of the result set in the query cache is the default of 1 MiB."
 msgstr ""
+"Dimensiunea maximă a setului rezultat în memoria cache de interogare este "
+"implicit de 1 MiB."
 
 #: po/advisory_rules.php:107
 msgid ""
@@ -12794,28 +12861,40 @@ msgid ""
 "(often invalidated due to table updates) increasing {query_cache_limit} "
 "might reduce efficiency."
 msgstr ""
+"Schimbarea parametrului {query_cache_limit} (de obicei, prin creșterea "
+"valorii) poate crește eficiența. Această variabilă determină dimensiunea "
+"maximă a rezultatului unei interogării pana la care acesta să fie inserat în "
+"memoria cache de interogare. Dacă există mai multe rezultate de interogare "
+"care depășesc dimensiunea de 1 MiB care sunt bune de păstrat în memorie "
+"(multe citiri, puține scrieri), atunci creșterea valorii parametrului "
+"{query_cache_limit} va crește eficiența. Întrucât în cazul în care mai multe "
+"rezultate ale interogărilor depășesc 1 MiB şi nu sunt foarte bune de "
+"păstrat în memorie (de multe ori invalidate de actualizări ale tabelului) "
+"creşterea valorii parametrului {query_cache_limit} ar putea reduce "
+"eficienţa."
 
 #: po/advisory_rules.php:108
 msgid "query_cache_limit is set to 1 MiB"
-msgstr ""
+msgstr "valoarea parametrului query_cache_limit este setata la 1 MiB"
 
 #: po/advisory_rules.php:110
-#, fuzzy
 #| msgid "Allows creating temporary tables."
 msgid "Percentage of sorts that cause temporary tables"
-msgstr "Permite crearea de tabele temporare."
+msgstr "Procentul de sortări care provoaca generarea de tabele temporare"
 
 #: po/advisory_rules.php:111 po/advisory_rules.php:116
-#, fuzzy
 #| msgid "Allows creating temporary tables."
 msgid "Too many sorts are causing temporary tables."
-msgstr "Permite crearea de tabele temporare."
+msgstr "Prea multe sortări cauzează crearea de tabele temporare."
 
 #: po/advisory_rules.php:112 po/advisory_rules.php:117
 msgid ""
 "Consider increasing sort_buffer_size and/or read_rnd_buffer_size, depending "
 "on your system memory limits"
 msgstr ""
+"Luaţi în considerare creşterea valorilor parametrilor sort_buffer_size "
+"şi/sau read_rnd_buffer_size, în funcţie de limitele memoriei sistemului "
+"dumneavoastră"
 
 #: po/advisory_rules.php:113
 #, php-format
@@ -12823,28 +12902,30 @@ msgid ""
 "%s%% of all sorts cause temporary tables, this value should be lower than "
 "10%%."
 msgstr ""
+"%s%% din sortări au generat tabele temporare, această valoare ar trebui să "
+"fie mai mică de 10%%."
 
 #: po/advisory_rules.php:115
-#, fuzzy
 #| msgid "Allows creating temporary tables."
 msgid "Rate of sorts that cause temporary tables"
-msgstr "Permite crearea de tabele temporare."
+msgstr "Rata de sortări care au generat tabele temporare"
 
 #: po/advisory_rules.php:118
 #, php-format
 msgid ""
 "Temporary tables average: %s, this value should be less than 1 per hour."
 msgstr ""
+"Media de tabele temporare: %s, această valoare ar trebui să fie mai mică de "
+"1 oră."
 
 #: po/advisory_rules.php:120
-#, fuzzy
 #| msgid "Start"
 msgid "Sort rows"
-msgstr "Dum"
+msgstr "Sortare (ordonare) rânduri"
 
 #: po/advisory_rules.php:121
 msgid "There are lots of rows being sorted."
-msgstr ""
+msgstr "Există o mulțime de rânduri sortate."
 
 #: po/advisory_rules.php:122
 msgid ""
@@ -13416,7 +13497,7 @@ msgstr ""
 
 #: po/advisory_rules.php:260
 msgid "Max InnoDB log size"
-msgstr ""
+msgstr "Mărimea maximă a înregistrării InnoDB."
 
 #: po/advisory_rules.php:261
 msgid "The InnoDB log file size is inadequately large."
@@ -13435,6 +13516,17 @@ msgid ""
 "mysqldatabaseadministration.blogspot.com/2007/01/increase-innodblogfilesize-"
 "proper-way.html\">this blog entry</a>"
 msgstr ""
+"De obicei, este suficientă setarea propietății innodb_log_file_size la 25%% "
+"din mărimea lui {innodb_buffer_pool_size}. O valoare foarte mare pentru "
+"innodb_log_file_size va încetini considerabil timpul de recuperare după o "
+"distrugere(eroare gravă) a unei baze de date.  A se vedea de asemenea <a "
+"href=\"http://www.mysqlperformanceblog.com/2006/07/03/choosing-proper-"
+"innodb_log_file_size/\">Articolul acesta</a>. Trebuie să se închidă server-"
+"ul, elimine fișierele InnoDB cu intrări, seteze valoarea nouă în my.cnf, "
+"pornească server-ul și apoi să se verifice intrările de erori, pentru a se "
+"asigura că totul a decurs bine. A se vedea de asemenea <a "
+"href=\"http://mysqldatabaseadministration.blogspot.com/2007/01/increase-"
+"innodblogfilesize-proper-way.html\">acest post din blog</a>."
 
 #: po/advisory_rules.php:263
 #, php-format
@@ -13442,10 +13534,9 @@ msgid "Your absolute InnoDB log size is %s MiB"
 msgstr ""
 
 #: po/advisory_rules.php:265
-#, fuzzy
 #| msgid "Buffer pool size"
 msgid "InnoDB buffer pool size"
-msgstr "Buffer pool size"
+msgstr "Mărimea buffer-ului pool al InnoDB."
 
 #: po/advisory_rules.php:266
 msgid "Your InnoDB buffer pool is fairly small."
@@ -13476,10 +13567,9 @@ msgid ""
 msgstr ""
 
 #: po/advisory_rules.php:270
-#, fuzzy
 #| msgid "max. concurrent connections"
 msgid "MyISAM concurrent inserts"
-msgstr "conexiuni concurente (maxim)"
+msgstr "inserări concurente MyISAM"
 
 #: po/advisory_rules.php:271
 msgid "Enable concurrent_insert by setting it to 1"
@@ -13497,7 +13587,7 @@ msgstr ""
 
 #: po/advisory_rules.php:273
 msgid "concurrent_insert is set to 0"
-msgstr "concurrent_insert este setat la 0"
+msgstr "concurrent_insert este setat cu 0"
 
 #~ msgctxt "MySQL 5.5 documentation language"
 #~ msgid "en"
