@@ -4,16 +4,16 @@ msgstr ""
 "Project-Id-Version: phpMyAdmin 3.5.4-dev\n"
 "Report-Msgid-Bugs-To: phpmyadmin-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2012-10-16 14:37+0200\n"
-"PO-Revision-Date: 2013-01-10 13:44+0200\n"
-"Last-Translator: Michal Čihař <michal@cihar.com>\n"
+"PO-Revision-Date: 2013-02-11 11:56+0200\n"
+"Last-Translator: Kai-Ove Finvold <translate@okai.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<http://l10n.cihar.com/projects/phpmyadmin/3-5/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 1.4-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.5-dev\n"
 
 #: browse_foreigners.php:35 browse_foreigners.php:53 js/messages.php:353
 #: libraries/display_tbl.lib.php:359 server_privileges.php:1679
@@ -4926,10 +4926,9 @@ msgstr ""
 "La stå tom for ingen SQL spørringshistorie, anbefalt: [kbd]pma_tracking[/kbd]"
 
 #: libraries/config/messages.inc.php:434
-#, fuzzy
 #| msgid "Defragment table"
 msgid "UI preferences table"
-msgstr "Defragmenter tabell"
+msgstr "Tabell for UI preferanser"
 
 #: libraries/config/messages.inc.php:435
 msgid ""
@@ -5011,7 +5010,7 @@ msgstr ""
 
 #: libraries/config/messages.inc.php:448
 msgid "User preferences storage table"
-msgstr ""
+msgstr "Tabell for lagring av brukerpreferanser"
 
 #: libraries/config/messages.inc.php:450
 msgid "User for config auth"
@@ -5099,7 +5098,7 @@ msgstr "Vis funksjonsfelter"
 
 #: libraries/config/messages.inc.php:466
 msgid "Whether to show hint or not"
-msgstr ""
+msgstr "Om hint skal vises eller ikke"
 
 #: libraries/config/messages.inc.php:467
 msgid "Show hint"
@@ -5192,7 +5191,7 @@ msgstr "Ignorer låste tabeller"
 
 #: libraries/config/messages.inc.php:488
 msgid "Requires SQL Validator to be enabled"
-msgstr ""
+msgstr "Krever at SQL Validator er aktivert"
 
 #: libraries/config/messages.inc.php:490
 #: libraries/display_change_password.lib.php:40
@@ -5212,13 +5211,15 @@ msgstr ""
 
 #: libraries/config/messages.inc.php:492
 msgid "Enable SQL Validator"
-msgstr ""
+msgstr "Aktiver SQL Validator"
 
 #: libraries/config/messages.inc.php:493
 msgid ""
 "If you have a custom username, specify it here (defaults to [kbd]anonymous[/"
 "kbd])"
 msgstr ""
+"Hvis du har et egendefinert brukernavn, angi det her (standard: "
+"[kbd]anonymous[/kbd])"
 
 #: libraries/config/messages.inc.php:494 tbl_tracking.php:460
 #: tbl_tracking.php:517
@@ -5239,7 +5240,7 @@ msgstr "Foreslå nytt databasenavn"
 
 #: libraries/config/messages.inc.php:497
 msgid "A warning is displayed on the main page if Suhosin is detected"
-msgstr ""
+msgstr "En advarsel vises på hovedsiden dersom Suhosin er oppdaget"
 
 #: libraries/config/messages.inc.php:498
 msgid "Suhosin warning"
@@ -8521,10 +8522,9 @@ msgid "Error in ZIP archive:"
 msgstr "Feil i ZIP arkivet:"
 
 #: main.php:65
-#, fuzzy
 #| msgid "General relation features"
 msgid "General Settings"
-msgstr "Generelle relasjonsegenskaper"
+msgstr "Generelle innstillinger"
 
 #: main.php:109
 #, fuzzy
@@ -8533,30 +8533,27 @@ msgid "Server connection collation"
 msgstr "Kollasjon av MySQL-oppkobling"
 
 #: main.php:124
-#, fuzzy
 #| msgid "Other core settings"
 msgid "Appearance Settings"
-msgstr "Andre hovedinnstillinger"
+msgstr "Visningsinnstillinger"
 
 #: main.php:153 prefs_manage.php:272
 msgid "More settings"
 msgstr "Flere innstillinger"
 
 #: main.php:169
-#, fuzzy
 #| msgid "Database for user"
 msgid "Database server"
-msgstr "Brukerdatabase"
+msgstr "Database-server"
 
 #: main.php:172
 msgid "Software"
-msgstr ""
+msgstr "Programvare"
 
 #: main.php:173
-#, fuzzy
 #| msgid "Show versions"
 msgid "Software version"
-msgstr "Vis versjoner"
+msgstr "Programvareversjon"
 
 #: main.php:175
 msgid "Protocol version"
@@ -8569,20 +8566,18 @@ msgid "User"
 msgstr "Bruker"
 
 #: main.php:184
-#, fuzzy
 #| msgid "Server socket"
 msgid "Server charset"
-msgstr "Tjenersokkel"
+msgstr "Server-tegnsett"
 
 #: main.php:196
 msgid "Web server"
 msgstr "Webserver"
 
 #: main.php:209
-#, fuzzy
 #| msgid "Use light version"
 msgid "Database client version"
-msgstr "Bruk hurtigversjon"
+msgstr "Database-versjon"
 
 #: main.php:213
 msgid "PHP extension"
@@ -8601,9 +8596,8 @@ msgid "Contribute"
 msgstr "Bidra"
 
 #: main.php:243
-#, fuzzy
 msgid "Get support"
-msgstr "Eksporter"
+msgstr "Brukerstøtte"
 
 #: main.php:244
 msgid "List of changes"
@@ -8659,7 +8653,6 @@ msgstr ""
 "innlogging utløpe raskere enn konfigurert i phpMyAdmin."
 
 #: main.php:299
-#, fuzzy
 #| msgid ""
 #| "HP parameter http://php.net/manual/en/session.configuration.#ini.session."
 #| "gc-lifetime@]session.gc_maxlifetime[/a] is lower that kie validity "
@@ -8669,10 +8662,9 @@ msgid ""
 "Login cookie store is lower than cookie validity configured in phpMyAdmin, "
 "because of this, your login will expire sooner than configured in phpMyAdmin."
 msgstr ""
-"Ditt PHP parameter [a@http://php.net/manual/en/session.configuration.php#ini."
-"session.gc-maxlifetime@_blank]session.gc_maxlifetime[/a] er lavere enn "
-"cookie gyldighet konfigurert i phpMyAdmin, på grunn av dette så vil din "
-"innlogging utløpe raskere enn konfigurert i phpMyAdmin."
+"Levetiden for din innloggings-cookie er kortere enn innstillingen satt i "
+"phpMyAdmin og din brukersesjon vil dermed utløpe tidligere enn konfigurert i "
+"phpMyAdmin."
 
 #: main.php:307
 msgid "The configuration file now needs a secret passphrase (blowfish_secret)."
