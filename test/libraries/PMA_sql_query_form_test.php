@@ -7,39 +7,24 @@
  */
 
 //the following defination should be used globally
-$GLOBALS['server'] = 1;
-//_SESSION
-$_SESSION['relation'][$GLOBALS['server']] = array(
-    'table_coords' => "table_name",
-    'displaywork' => 'displaywork',
-    'db' => "information_schema",
-    'table_info' => 'table_info',
-    'relwork' => 'relwork',
-    'relation' => 'relation',
-    'bookmarkwork' => 'bookmarkwork',
-);
-//$GLOBALS
-$GLOBALS['cfg']['Server']['user'] = "user";
-$GLOBALS['cfg']['Server']['pmadb'] = "pmadb";
-$GLOBALS['cfg']['Server']['bookmarktable'] = "bookmarktable";
+$GLOBALS['server'] = 0;
 
 /*
  * Include to test.
 */
 require_once 'libraries/Util.class.php';
-require_once 'libraries/Advisor.class.php';
 require_once 'libraries/php-gettext/gettext.inc';
 require_once 'libraries/url_generating.lib.php';
-require_once 'libraries/mysql_charsets.lib.php';
-require_once 'libraries/ServerStatusData.class.php';
 require_once 'libraries/relation.lib.php';
-require_once 'libraries/sql_query_form.lib.php';
 require_once 'libraries/Theme.class.php';
-require_once 'libraries/database_interface.inc.php';
 require_once 'libraries/Message.class.php';
 require_once 'libraries/sanitizing.lib.php';
 require_once 'libraries/sqlparser.lib.php';
 require_once 'libraries/js_escape.lib.php';
+require_once 'libraries/database_interface.inc.php';
+require_once 'libraries/sql_query_form.lib.php';
+require_once 'libraries/kanji-encoding.lib.php';
+require_once 'libraries/mysql_charsets.lib.php';
 
 /**
  * class PMA_SqlQueryForm_Test
@@ -61,9 +46,8 @@ class PMA_SqlQueryForm_Test extends PHPUnit_Framework_TestCase
         $GLOBALS['max_upload_size'] = 100;
         $GLOBALS['PMA_PHP_SELF'] = PMA_getenv('PHP_SELF');
         $GLOBALS['db'] = "PMA_db";
-        $GLOBALS['table'] = "table";
-        $GLOBALS['pmaThemeImage'] = 'image';
         $GLOBALS['table'] = "PMA_table";
+        $GLOBALS['pmaThemeImage'] = 'image';
         $GLOBALS['text_dir'] = "text_dir";
 
         $GLOBALS['cfg']['GZipDump'] = false;
@@ -76,6 +60,21 @@ class PMA_SqlQueryForm_Test extends PHPUnit_Framework_TestCase
         $GLOBALS['cfg']['DefaultTabDatabase'] = "default_database";
         $GLOBALS['cfg']['RetainQueryBox'] = true;
         $GLOBALS['cfg']['ActionLinksMode'] = 'both';
+
+        //_SESSION
+        $_SESSION['relation'][$GLOBALS['server']] = array(
+            'table_coords' => "table_name",
+            'displaywork' => 'displaywork',
+            'db' => "information_schema",
+            'table_info' => 'table_info',
+            'relwork' => 'relwork',
+            'relation' => 'relation',
+            'bookmarkwork' => 'bookmarkwork',
+        );
+        //$GLOBALS
+        $GLOBALS['cfg']['Server']['user'] = "user";
+        $GLOBALS['cfg']['Server']['pmadb'] = "pmadb";
+        $GLOBALS['cfg']['Server']['bookmarktable'] = "bookmarktable";
 
         //$_SESSION
         $_SESSION['PMA_Theme'] = PMA_Theme::load('./themes/pmahomme');
@@ -256,6 +255,59 @@ class PMA_SqlQueryForm_Test extends PHPUnit_Framework_TestCase
         );
         $this->assertContains(
             __('Clear'),
+            $html
+        );
+    }
+
+    /**
+     * Test for PMA_getHtmlForSqlQueryForm
+     *
+     * @return void
+     */
+    public function testPMAGetHtmlForSqlQueryForm()
+    {
+        //Call the test function
+        $GLOBALS['is_upload'] = true;
+        $query = "select * from PMA";
+        $html = PMA_getHtmlForSqlQueryForm($query);
+
+        //validate 1: query
+        $this->assertContains(
+            htmlspecialchars($query),
+            $html
+        );
+
+        //validate 2: $enctype
+        $enctype = ' enctype="multipart/form-data"';
+        $this->assertContains(
+            $enctype,
+            $html
+        );
+
+        //validate 3: sqlqueryform
+        $this->assertContains(
+            'id="sqlqueryform" name="sqlform">',
+            $html
+        );
+
+        //validate 4: $db, $table
+        $table  = $GLOBALS['table'];
+        $db     = $GLOBALS['db'];
+        $this->assertContains(
+            PMA_URL_getHiddenInputs($db, $table),
+            $html
+        );
+
+        //validate 5: $goto
+        $goto = empty($GLOBALS['goto']) ? 'tbl_sql.php' : $GLOBALS['goto'];
+        $this->assertContains(
+            htmlspecialchars($goto),
+            $html
+        );
+
+        //validate 6: PMA_Kanji_encodingForm
+        $this->assertContains(
+            PMA_Kanji_encodingForm(),
             $html
         );
     }
