@@ -1947,7 +1947,7 @@ class PMA_ServerPrivileges_Test extends PHPUnit_Framework_TestCase
             $username, $hostname, $tablename
         );
 
-        //title
+        //validate 1: title
         $this->assertContains(
             __('Edit Privileges:'),
             $html
@@ -1957,7 +1957,7 @@ class PMA_ServerPrivileges_Test extends PHPUnit_Framework_TestCase
             $html
         );
 
-        //PMA_URL_getCommon
+        //validate 2: PMA_URL_getCommon
         $item = PMA_URL_getCommon(
             array(
                 'username' => $username,
@@ -1971,7 +1971,7 @@ class PMA_ServerPrivileges_Test extends PHPUnit_Framework_TestCase
             $html
         );
 
-        //$username & $hostname
+        //validate 3: $username & $hostname
         $this->assertContains(
             htmlspecialchars($username),
             $html
@@ -1981,19 +1981,19 @@ class PMA_ServerPrivileges_Test extends PHPUnit_Framework_TestCase
             $html
         );
 
-        //$dbname_is_wildcard = true
+        //validate 4: $dbname_is_wildcard = true
         $this->assertContains(
             __('Databases'),
             $html
         );
 
-        //$dbname_is_wildcard = true
+        //validate 5: $dbname_is_wildcard = true
         $this->assertContains(
             __('Databases'),
             $html
         );
 
-        //PMA_URL_getCommone
+        //validate 6: PMA_URL_getCommone
         $item = PMA_URL_getCommon(
             array(
                 'username' => $username,
